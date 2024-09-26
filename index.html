@@ -108,25 +108,54 @@
     </ul>
 </div>
 
-<div class="container" id="consulta">
-    <h2>Consulta Online</h2>
-    <p>Para solicitar uma consulta jurídica, preencha o formulário abaixo e entrarei em contato o mais breve possível.</p>
-<!-- modify this form HTML and place wherever you want your form -->
-<form
-  action="https://formspree.io/f/xpwavakr"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Formulário</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+        }
+        input, textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Entre em Contato</h1>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="text" name="name" placeholder="Seu Nome" required>
+        <input type="email" name="email" placeholder="Seu Email" required>
+        <textarea name="message" placeholder="Sua Mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>
+
 <div class="container" id="contato">
     <h2>Contato</h2>
     <p>Telefone: (22) 9 9618-9181</p> <!-- Telefone adicionado -->
@@ -135,6 +164,10 @@
 
 <footer>
     <p>&copy; 2024 Daniela Bueno - Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
 </footer>
 
 </body>
