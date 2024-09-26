@@ -128,6 +128,18 @@
     </form>
 </div>
 
+<script>
+    document.querySelector('form').addEventListener('submit', function(event) {
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+
+        if (!name || !email) {
+            alert('Por favor, preencha todos os campos obrigatórios.');
+            event.preventDefault(); // Impede o envio do formulário
+        }
+    });
+</script>
+
 <div class="container" id="contato">
     <h2>Contato</h2>
     <p>Telefone: (22) 9 9618-9181</p> <!-- Telefone adicionado -->
