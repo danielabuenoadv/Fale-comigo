@@ -111,23 +111,22 @@
 <div class="container" id="consulta">
     <h2>Consulta Online</h2>
     <p>Para solicitar uma consulta jurídica, preencha o formulário abaixo e entrarei em contato o mais breve possível.</p>
-    <form action="https://yourformprocessor.com" method="POST">
-        <label for="name">Nome Completo</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">E-mail</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="subject">Assunto</label>
-        <input type="text" id="subject" name="subject" required>
-
-        <label for="message">Mensagem</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <button type="submit">Enviar Consulta</button>
-    </form>
-</div>
-
+<!-- modify this form HTML and place wherever you want your form -->
+<form
+  action="https://formspree.io/f/xpwavakr"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
 <div class="container" id="contato">
     <h2>Contato</h2>
     <p>Telefone: (22) 9 9618-9181</p> <!-- Telefone adicionado -->
