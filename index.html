@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniela Bueno - Advogada</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0e68c; /* Fundo dourado claro */
+            color: #333;
+        }
+        header {
+            background-color: #b8860b; /* Dourado escuro */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        nav {
+            text-align: center;
+            background-color: #8b4513; /* Marrom de fungo */
+            padding: 15px 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #b8860b; /* Dourado escuro */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form label {
+            margin: 10px 0 5px;
+        }
+        form input, form textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        form button {
+            padding: 10px;
+            background-color: #b8860b; /* Dourado escuro */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #8b4513; /* Marrom de fungo */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Daniela Bueno - Advogada</h1>
+    <p>OAB/RJ 262.052</p>
+    <p><em>"Fiat justitia, pereat mundus."</em></p> <!-- Frase adicionada -->
+</header>
+
+<nav>
+    <a href="#sobre">Sobre Mim</a>
+    <a href="#areas">Áreas de Atuação</a>
+    <a href="#consulta">Consulta Online</a>
+    <a href="#contato">Contato</a>
+</nav>
+
+<div class="container" id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Sou Daniela Bueno, advogada com experiência nas áreas de Direito Civil, Família, Previdenciário e do Consumidor. 
+    Com pós-graduação em Direito de Família e Sucessões, além de Regularização Imobiliária, atuo de forma personalizada em todo o território nacional.</p>
+</div>
+
+<div class="container" id="areas">
+    <h2>Áreas de Atuação</h2>
+    <ul>
+        <li>Direito Civil</li>
+        <li>Direito de Família e Sucessões</li>
+        <li>Direito Previdenciário</li>
+        <li>Direito do Consumidor</li>
+        <li>Regularização Imobiliária</li>
+    </ul>
+</div>
+
+<div class="container" id="consulta">
+    <h2>Consulta Online</h2>
+    <p>Para solicitar uma consulta jurídica, preencha o formulário abaixo e entrarei em contato o mais breve possível.</p>
+    <form action="https://yourformprocessor.com" method="POST">
+        <label for="name">Nome Completo</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="subject">Assunto</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label for="message">Mensagem</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Enviar Consulta</button>
+    </form>
+</div>
+
+<div class="container" id="contato">
+    <h2>Contato</h2>
+    <p>Telefone: (22) 9 9618-9181</p> <!-- Telefone adicionado -->
+    <p>E-mail: <a href="mailto:advogado.danielabueno@gmail.com">advogado.danielabueno@gmail.com</a></p> <!-- E-mail adicionado -->
+</div>
+
+<footer>
+    <p>&copy; 2024 Daniela Bueno - Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
